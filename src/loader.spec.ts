@@ -16,10 +16,10 @@ beforeEach(() => {
   mockLoaderContextResourcePath.mockReset();
   mockLoaderContextContext.mockReset();
   mockLoaderContextResourcePath.mockImplementation(() =>
-    path.resolve(__dirname, "./__fixtures__/components/Simple.tsx"),
+    path.resolve(__dirname, "./__fixtures__/components/Simple.tsx")
   );
   mockLoaderContextContext.mockImplementation(() =>
-    path.resolve(__dirname, "./__fixtures__/"),
+    path.resolve(__dirname, "./__fixtures__/")
   );
 });
 
@@ -41,6 +41,6 @@ function executeLoaderWithBoundContext() {
       webpack.loader.LoaderContext,
       "async" | "cacheable" | "resourcePath" | "context"
     >) as webpack.loader.LoaderContext,
-    "// Original Source Code",
+    "// Original Source Code"
   );
 }

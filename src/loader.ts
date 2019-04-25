@@ -10,7 +10,7 @@ import {
   withCustomConfig,
   withCompilerOptions,
   ParserOptions,
-  FileParser,
+  FileParser
 } from "react-docgen-typescript/lib/parser.js";
 import LoaderOptions from "./LoaderOptions";
 import validateOptions from "./validateOptions";
@@ -25,7 +25,7 @@ let languageService: ts.LanguageService | null = null;
 const files: Map<string, TSFile> = new Map<string, TSFile>();
 
 export default function loader(
-  this: webpack.loader.LoaderContext,
+  this: webpack.loader.LoaderContext
   // source: string,
 ) {
   // Loaders can operate in either synchronous or asynchronous mode. Errors in
@@ -51,7 +51,7 @@ export default function loader(
 }
 
 function processResource(
-  context: webpack.loader.LoaderContext,
+  context: webpack.loader.LoaderContext
   // source: string,
 ): object {
   // Mark the loader as being cacheable since the result should be
@@ -121,7 +121,7 @@ function processResource(
 
       languageService = ts.createLanguageService(
         servicesHost,
-        ts.createDocumentRegistry(),
+        ts.createDocumentRegistry()
       );
 
       return languageService!.getProgram()!;
