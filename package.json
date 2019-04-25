@@ -18,7 +18,9 @@
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
-    "dist/*"
+    "dist/*",
+    "package.json",
+    "README.md"
   ],
   "precommit": [
     "clean",
