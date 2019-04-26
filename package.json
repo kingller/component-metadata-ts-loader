@@ -13,8 +13,14 @@
   ],
   "homepage": "https://github.com/kingller/component-metadata-typescript-loader",
   "bugs": "https://github.com/kingller/component-metadata-typescript-loader/issues",
-  "repository": "https://github.com/kingller/component-metadata-typescript-loader.git",
-  "author": "kingller",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingller/component-metadata-typescript-loader.git"
+  },
+  "author": {
+    "name": "Kingller Tang",
+    "url": "https://github.com/kingller"
+  },
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
