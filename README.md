@@ -1,4 +1,4 @@
-# component-metadata-typescript-loader
+# component-metadata-ts-loader
 A Webpack loader for extracting React Component metadata (props, comments jsDoclets, etc) defined in TypeScript. 
 Helpful for get documentation information from React components, it uses 
 [react-docgen-typescript](https://github.com/styleguidist/react-docgen-typescript) 
@@ -7,7 +7,7 @@ to parse and return JSON metadata when requiring a file.
 ## Installation
 
 ```sh
-$ npm install --save component-metadata-typescript-loader
+$ npm install --save component-metadata-ts-loader
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ Generally you will want to use the inline request syntax for using this loader,
 instead of adding it to your config file.
 
 ```js
-var metadata = require('component-metadata-typescript-loader!./some/my-component');
+var metadata = require('component-metadata-ts-loader!./some/my-component');
 
 metadata.componentDocs[0] // { props, description, displayName }
 ```
@@ -29,7 +29,7 @@ access them from `metadata.componentDocs[0].props`
 - `@required` will mark a prop as required as if you had used `string.isRequired` for the propType.
 - `@type`: overrides the type name of the prop, also accepts the following syntax for enums
 or `oneOf` props `('foo'|'bar'|'baz')`
-- `@defaultValue`: for manually specifying a default value for a prop.
+- `@default`: for manually specifying a default value for a prop.
 
 ### Exporting Components
 
