@@ -86,6 +86,8 @@ function processResource(
 
   let compilerOptions: ts.CompilerOptions = {
     allowJs: true,
+    esModuleInterop: true, // 可调用的CommonJS模块必须被做为默认导入，在已有的“老式”模块模式之间保证最佳的互通性
+    allowSyntheticDefaultImports: true // 允许使用 ES2015 默认的 import 风格
   };
   let tsConfigFile: ts.ParsedCommandLine | null = null;
 
