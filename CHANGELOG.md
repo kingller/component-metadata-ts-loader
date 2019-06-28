@@ -6,6 +6,9 @@
 <font color=red><strong>删除</strong></font>
 
 
+# 2.2.0
+<font color=orange>修改</font> `TypeScript`默认`compilerOptions`移除`2.1.0`中加入的`esModuleInterop`，使用`allowSyntheticDefaultImports`即可支持
+
 # 2.1.0
 <font color=orange>修改</font> `TypeScript`默认`compilerOptions`加上如下配置，以支持导入方式`import React from 'react';`
 ```

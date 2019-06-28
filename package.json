@@ -1,6 +1,6 @@
 {
   "name": "component-metadata-ts-loader",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Webpack loader to parse typescript React component metadata from source code.",
   "keywords": [
     "react",
