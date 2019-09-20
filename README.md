@@ -26,9 +26,6 @@ metadata.componentDocs[0] // { props, description, displayName }
 The loader will parse out any jsDoc style from either component or propType comment blocks. You can
 access them from `metadata.componentDocs[0].props`
 
-- `@required` will mark a prop as required as if you had used `string.isRequired` for the propType.
-- `@type`: overrides the type name of the prop, also accepts the following syntax for enums
-or `oneOf` props `('foo'|'bar'|'baz')`
 - `@default`: for manually specifying a default value for a prop.
 
 ### Exporting Components
