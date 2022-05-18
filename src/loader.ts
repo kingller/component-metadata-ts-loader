@@ -41,7 +41,7 @@ export default function loader(
     if (!callback) return newSource;
     callback(null, `module.exports = ${JSON.stringify(newSource)}`);
     return;
-  } catch (e) {
+  } catch (e: any) {
     if (callback) {
       callback(e);
       return;
