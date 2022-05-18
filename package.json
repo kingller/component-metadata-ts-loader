@@ -1,6 +1,6 @@
 {
   "name": "component-metadata-ts-loader",
-  "version": "2.3.0-dev2",
+  "version": "2.3.0",
   "description": "Webpack loader to parse typescript React component metadata from source code.",
   "keywords": [
     "component",
@@ -66,6 +66,9 @@
   },
   "peerDependencies": {
     "typescript": "*"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   },
   "precommit": [
     "clean",
